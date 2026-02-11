@@ -47,7 +47,7 @@ public class TouristController {
         }
         return new ResponseEntity<>(createAttraction, HttpStatus.CREATED);
     }
-
+//
     @PostMapping("/update")
     public ResponseEntity<TouristAttraction> updateAttraction(@RequestBody TouristAttraction attraction) {
         TouristAttraction updatedAttraction = service.updateAttraction(attraction);
