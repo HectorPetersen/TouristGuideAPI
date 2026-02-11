@@ -29,7 +29,7 @@ public class TouristController {
         List<TouristAttraction> attractions = service.getAllAttractions();
         return new ResponseEntity<>(attractions, HttpStatus.OK);
     }
-
+//
     @GetMapping("/{name}")
     public ResponseEntity<TouristAttraction> getByName(@PathVariable String name) {
         TouristAttraction found = service.findAttractionsByName(name);
